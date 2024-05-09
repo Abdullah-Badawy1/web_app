@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = ""; // Update as necessary
+$username = "webappuser"; // New username
+$password = "securepassword"; // New password
 $dbname = "login_db";
 
 // Create connection
