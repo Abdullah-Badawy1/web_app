@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+nav ul, .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a, .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-image: url('../assets/ict2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    color: #004d99;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #004d99;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+ul li:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb {
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 15px;
+    list-style: none;
+    overflow: hidden;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item {
+    display: inline;
+    font-size: 1em;
+}
+
+.breadcrumb-item a {
+    color: #0275d8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 5px;
+    color: #6c757d;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+

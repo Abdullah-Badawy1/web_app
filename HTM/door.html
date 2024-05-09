@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Egyptian-Korean Faculty of Technology and Energy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-logo">
+            <img src="./assets/logo1.jpeg" alt="University Logo">
+        </div>
+        <div class="login-form-container">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="event.preventDefault(); login();">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div class="login-utilities">
+                <a href="#" class="utility-link">Forgot Password?</a>
+                <a href="#" class="utility-link">SSO Help</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Egyptian-Korean Faculty of Technology and Energy</p>
+    </footer>
+    <script>
+        function login() {
+            // Placeholder for login logic
+            window.location.href = 'home/HTML.html'; // Redirect to home after login
+        }
+    </script>
+</body>
+</html>

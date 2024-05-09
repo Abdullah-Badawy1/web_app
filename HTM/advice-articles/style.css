@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul, .footer-section ul, #about-university ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li, .secondary-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a, .footer-section ul li a, .secondary-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    text-align: right;
+    padding: 10px;
+}
+
+.search-container input[type="text"], .search-container button {
+    padding: 5px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    margin-right: 16px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+main {
+    padding: 20px;
+    background-image: url('../assets/books.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.secondary-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondary-nav a {
+    color:black;
+    display: block;
+}
+
+.department-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+#departments ul {
+    list-style: none;
+    padding: 0;
+}
+
+#departments li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+#about-university {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-left: solid 4px #003366;
+    border-right: solid 4px #003366;
+}
+
+#about-university h2, #about-university h3 {
+    color: #003366;
+    text-align: center;
+    border-bottom: solid 1px #003366;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#about-university ul li::before {
+    content: '• ';
+    color: #003366;
+}
+
+#about-university ol {
+    counter-reset: item;
+}
+
+#about-university ol li {
+    list-style-type: none;
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+
+#about-university ol li::before {
+    content: counters(item, ".") " ";
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li, .secondary-nav ul {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .secondary-nav ul {
+        flex-direction: column;
+    }
+
+    .secondary-nav ul li {
+        margin: 10px 0;
+    }
+
+    .search-container, .search-container form {
+        text-align: center;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
+main {
+    background-color: #ffffff; /* Change to a lighter background for better readability */
+    color: #333333; /* Darker text color for readability */
+    font-size: 1.1em; /* Slightly larger font size for easy reading */
+}
+
+/* Article Styling */
+article {
+    background-color: #f9f9f9; /* Light background for each article */
+    border: 1px solid #ddd; /* Subtle border */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+article h3 {
+    color: #0056b3; /* A color that matches the header for consistency */
+    margin-bottom: 10px;
+}
+
+/* Enhanced Link Styles */
+a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #003366;
+    text-decoration: none; /* Changes on hover for better user experience */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    /* Existing responsive styles */
+    /* ... */
+
+    /* Additional Responsive Styles for Articles */
+    article {
+        padding: 10px;
+    }
+}
+
+/* Section Headings */
+section h2 {
+    background-color: #003366; /* Matching header background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block; /* Makes the heading stand out */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
