@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = ""; // Default password for root in local installations is usually empty
+$password = ""; // Update as necessary
 $dbname = "login_db";
 
 // Create connection
