@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Egyptian-Korean Faculty of Technology and Energy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="login-container">
@@ -13,7 +14,7 @@
         </div>
         <div class="login-form-container">
             <h2>Login</h2>
-            <form id="loginForm" onsubmit="event.preventDefault(); login();">
+            <form id="loginForm" onsubmit="login(event)">
                 <div class="input-group">
                     <input type="text" id="username" name="username" placeholder="Enter your Username" required>
                 </div>
@@ -31,11 +32,5 @@
     <footer>
         <p>&copy; 2024 Egyptian-Korean Faculty of Technology and Energy</p>
     </footer>
-    <script>
-        function login() {
-            // Placeholder for login logic
-            window.location.href = 'home/HTML.html'; // Redirect to home after login
-        }
-    </script>
 </body>
 </html>
